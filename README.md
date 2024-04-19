@@ -105,3 +105,35 @@ public class Main {
   }
   
 ```
+```java
+/* Give an array of integers, write a Java program to find the maximum sum of two integers in the array eg [1,2,3,4,5] the max sum would be 4+5 */
+
+
+public class Main {
+  public static void main(String[] args) {
+
+    
+  int[] array = {10, 20, 60, 40, 30};
+
+   
+    int maxSum = Integer.MIN_VALUE;
+    int num1 = 0;
+    int num2 = 0;
+    
+    for(int i = 0; i < array.length; i++){
+        for(int j = i + 1; j < array.length; j++){
+            if(array[i] + array[j] > maxSum){
+             num1 = array[i];
+             num2 = array[j];
+            maxSum = num1 + num2;
+      }
+      }
+      }
+    
+      
+    System.out.println("The maximum sum is " + maxSum); 
+    System.out.println("The two numbers are " + num1 + " and " + num2);
+  }
+  }
+  
+```
