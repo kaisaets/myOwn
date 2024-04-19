@@ -35,3 +35,36 @@ For numbers that are divided by 3: print out "Wo" .
 For numbers that are divided by 5: print out "Tech". 
 
 For numbers divided by 3 and 5: print out "WoTech". */
+
+## 180424
+// Fill the party list wtih people you would like to invite to the party. Check whether or not ann and maris are in the array
+ 
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    String[] partyList = {"Oskars", "Anna", "Andris", "Johanna", "Marta"};
+    
+  Scanner scanner = new Scanner(System.in);
+  
+  System.out.println("What name would you like to check from the invitation list?");
+    
+  String input = scanner.nextLine().toLowerCase();
+    
+  boolean isInvited = false;
+  for(String name : partyList){
+   if(name.toLowerCase().equals(input)){
+     isInvited = true;
+     break;
+   }
+  }
+    if (isInvited){
+  System.out.println(input + " is in the party list");
+   } else {
+    System.out.println(input + " is not in the party list");
+}
+    scanner.close();
+  }
+    
+}
+
