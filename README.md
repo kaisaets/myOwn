@@ -1,5 +1,6 @@
 # 180424
 ##110424 fizbuzz
+```java
 import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
@@ -35,10 +36,13 @@ For numbers that are divided by 3: print out "Wo" .
 For numbers that are divided by 5: print out "Tech". 
 
 For numbers divided by 3 and 5: print out "WoTech". */
+```
 
 ## 180424
-// Fill the party list wtih people you would like to invite to the party. Check whether or not ann and maris are in the array
  
+```java
+// Fill the party list wtih people you would like to invite to the party. Check whether or not ann and maris are in the array
+
 import java.util.Scanner;
 
 public class Main {
@@ -67,4 +71,4 @@ public class Main {
   }
     
 }
-
+```
